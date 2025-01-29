@@ -3,15 +3,15 @@ body {
     background-color: black;
     background-image: url(Images/background.png);
     background-size: 60% 105%;
-    background-position: right 50px;
+    background-position: right 80px;
     background-repeat: no-repeat;
 }
-
+S
 /* Container */
 .container {
     /* max-width: 1200px;
     margin: 0 auto; */
-    padding: 20px;
+    padding: 10px;
 }
 
 /* Header */
@@ -24,9 +24,9 @@ header {
 /* Logo */
 .logo {
     display: block;
-    margin: 10 auto;
-    width: 140px; 
-    /* height: auto; */
+    margin: 0;
+    width: 90px; 
+    height: auto;
 }
 nav{
     display: flex;
@@ -52,7 +52,48 @@ nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    font-family: Lucida Console, Courier, monospace;
+    /* padding: 10px;
+    border: 1px solid #399ad7;
+    border-radius: 5px; */
 }
-nav ul li a:hover {
-    color: #d73333;
+
+nav ul li a::after {
+    content: '';
+    background: #ff0000;
+    width: 0;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+}
+nav ul li a:hover{
+        color: #ff0000;
+        width: 100%;
+    }
+/* nav ul li a:hover::after{
+    width: 100%;
+} */
+.header-text{
+    font-size: 30px;
+    font-family: Lucida Console, Courier, monospace;
+    font-weight: bold;
+    margin-top: 20%;
+    color: white;
+    padding: 30px;
+}
+.header-text h1{
+    font-size: 43px;
+    font-family: Lucida Console, Courier, monospace;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-decoration: blueviolet;
+    text-shadow: aquamarine;
+    
+}
+.header-text h1 span{
+    color: #f10101;
 }
