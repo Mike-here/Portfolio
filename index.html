@@ -45,11 +45,11 @@ When I'm not coding, you'll find me reading about the future of AGI, exploring n
 Feel free to connect with me—I'd love to collaborate and discuss exciting ideas!
                         </p>
                         <div class="tab-titles">
-                            <p class="tab-links active-link">Skills</p>
-                            <p class="tab-links">Experience</p>
-                            <p class="tab-links">Education</p>
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
                         </div>
-                        <div class="tab-contents">  
+                        <div class="tab-contents active-tab" id="skills">    
                             <ul>
                                 <li><span>Python</span><br>Proficient in writing clean and efficient code.</li>
                                 <li><span>JavaScript</span><br>Skilled in adding interactivity to web applications.</li>
@@ -60,10 +60,46 @@ Feel free to connect with me—I'd love to collaborate and discuss exciting idea
                                 
                             </ul>
                         </div>
+                        <div class="tab-contents" id="experience">    
+                            <ul>
+                                <li><span>X-ray, Technical Intern</span><br>Aniniwah Medical Center, Kumasi-Ashanti, Ghana (08/2023 - 12/2023)</li>
+                                <li>Registered and managed OPD patient flow, ensuring efficient patient registration and record handling to support medical staff and enhance patient experience.</li>
+                                <li>Processed and accurately entered over 1,500 patient records into the hospital's data management system, ensuring a 98% accuracy rate in patient information and reducing wait times by 20% for X-ray and ultrasound procedures.</li>
+
+                                <li><span>SAT Tutor</span><br>Toptier Study Abroad Consult, Kumasi-Ashanti, Ghana (01/2023 - 07/2023)</li>
+                                <li>Tutored SAT Math prep to a group of 15 students, increasing average math scores by 20% within two months of instruction.</li>
+                                <li>Created personalized lesson plans and mock tests, improving students' accuracy and speed in solving SAT Math problems by 25%.</li>
+                                <li>Organized SAT Math review sessions, helping 90% of the class reach or exceed their target scores.</li> 
+                                
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">    
+                            <ul>
+                                <li><span>Bachelor of Science - Computer Science</span><br>Grambling State University, Grambling, LA, USA (08/2024 - 05/2028)</li>
+                                <li><span>SAT Score:</span><br>1500</li>
+                                <li><span>GPA:</span><br>3.9/4.0</li>
+                                <li><span>Relevant Courses</span><br>Object-Oriented Programming, Data Structures and Algorithms, Software Construction, Programming for Web, AI Augmented and Professional Development, Introduction to Prompt Engineering, Multivariable Calculus, Linear Algebra, Differential Equations</li>
+                                
+                            </ul>
+                        </div>
                         
                     </div>
                 </div>
             </div>
         </div>
+        <script>
+            var tablinks = document.getElementsByClassName('tab-links');
+            var tabcontents = document.getElementsByClassName('tab-contents');
+            function opentab(tab){
+                for(var i=0; i<tablinks.length; i++){
+                    tablinks[i].classList.remove('active-link');
+                }
+                for(var i=0; i<tabcontents.length; i++){
+                    tabcontents[i].classList.remove('active-tab');
+                }
+                document.getElementById(tab).classList.add('active-tab');
+                event.currentTarget.classList.add('active-link');
+            }
+        </script>
     </body>
 </html>
