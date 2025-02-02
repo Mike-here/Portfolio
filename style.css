@@ -180,3 +180,34 @@ nav ul li a:hover{
     grid-gap: 40px;
     margin-top: 50px;
 }
+.services-list div{
+    background: #4e8f9f;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+}
+.services-list i{
+    font-size: 70px;
+    color: #ff0000;
+    margin-bottom: 30px;
+}
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.services-list div a{
+    font-size: 12px;
+    color: #a60d0d;
+    margin-top: 20px;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.services-list div p{
+    color: white;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
