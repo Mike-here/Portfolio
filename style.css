@@ -54,7 +54,7 @@ nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-family: Lucida Console, Courier, monospace;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     /* padding: 10px;
     border: 1px solid #399ad7;
     border-radius: 5px; */
@@ -124,9 +124,17 @@ nav ul li a:hover{
 }
 .sub-title{
     font-size: 45px;
-    font-family: Lucida Console, Courier, monospace;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
     color: white;
+}
+.about-col-2 p{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 20px;
+    color: white;
+    text-align: justify;
+    line-height: 1.5em;
 }
 .tab-titles{
     display: flex;
@@ -155,6 +163,8 @@ nav ul li a:hover{
 .tab-contents ul li{
     list-style: none;
     margin: 10px 0;
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.5em;
 }
 .tab-contents ul li span{
     font-weight: bold;
@@ -170,7 +180,7 @@ nav ul li a:hover{
 /* -----------------services----------------- */
 #services{
     color: white;
-    padding: 30px 0;
+    padding: 30px 15px;
 }
 .services-list{
     display: grid;
