@@ -305,3 +305,49 @@ nav ul li a:hover{
 .view-all:hover{
     background: #ff0000;
 }
+/* -----------------contact----------------- */
+
+#contact{
+    color: white;
+    padding: 80px 0;
+    margin-bottom: auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+}
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.contact-left p i{
+    font-size: 20px;
+    color: #ff0000;
+    margin-right: 15px;
+}
+.social-icons{
+    display: flex;
+    margin-top: 30px;
+}
+.social-icons a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    font-size: 18px;
+    color: rgb(193, 185, 185);
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+.view-all.view-all2{
+    display: inline-block;
+    background: #ff004f;
+}
