@@ -351,3 +351,104 @@ nav ul li a:hover{
     display: inline-block;
     background: #ff004f;
 }
+.contact-right form{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+form input, form textarea{
+    width: 48%;
+    padding: 10px;
+    border: 1px solid #ff004f;
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+    outline: none;
+    margin: 15px 0;
+}
+form .view-all2{
+    background: #ff004f;
+    border: 1px solid #ff004f;
+    padding: 14px 60px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.5s;
+    cursor: pointer;
+}
+.copyright{
+    width: 100%;
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+}
+.copyright i{
+    color: #4bb2e5;
+    text-decoration: none;
+}
+/* -----css for small devices----- */
+@media only screen and (max-width: 500px){
+    .about-col-1{
+        flex-basis: 100%;
+    }
+    .about-col-2{
+        flex-basis: 100%;
+    }
+    .tab-links{
+        margin-right: 20px;
+    }
+    .tab-contents ul li{
+        font-size: 14px;
+    }
+    .services-list div{
+        padding: 15px;
+    }
+    .services-list div h2{
+        font-size: 20px;
+    }
+    .services-list div p{
+        font-size: 14px;
+    }
+    .work img{
+        width: 100%;
+    }
+    .layer{
+        padding: 0 20px;
+    }
+    .layer h3{
+        font-size: 18px;
+    }
+    .layer a{
+        font-size: 14px;
+        line-height: 40px;
+    }
+    .view-all{
+        padding: 10px 30px;
+    }
+    .contact-left{
+        flex-basis: 100%;
+    }
+    .contact-right{
+        flex-basis: 100%;
+    }
+    form input, form textarea{
+        width: 100%;
+    }
+    .social-icons a{
+        width: 30px;
+        height: 30px;
+    }
+    .social-icons a i{
+        font-size: 16px;
+    }
+    .view-all.view-all2{
+        padding: 10px 30px;
+    }
+    
+}
