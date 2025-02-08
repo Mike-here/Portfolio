@@ -18,14 +18,16 @@
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-rectangle-xmark"></i>
                 </ul>
+                <i class="fa-solid fa-bars"></i>
             </nav>
             <div class="header-text">
                 <p>Software Engineer</p>
                 <h1>Hi, I'm <span>Michael</span><br><br> Acheampong from Ghana.</h1>
             </div>
         </div>
-        ------------------------------about me section--------------------------------
+        <!-- ------------------------------about me section-------------------------------- -->
         <div id="about">
             <div class="container">
                 <div class="row">
@@ -178,12 +180,13 @@ Feel free to connect with me—I'd love to collaborate and discuss exciting idea
                         <a href="Images/My Resume.pdf" target="_blank" rel="noopener noreferrer" download class="view-all view-all2">See Resume</a>
                     </div>
                     <div class="contact-right">
-                        <form>
+                        <form name="submit-to-google-sheet">
                             <input type="text" name="Name" placeholder="Full Name" required>
                             <input type="email" name="Email" placeholder="Your Email" required> 
                             <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
                             <button type="submit" class="view-all view-all2">Send</button>
                         </form>
+                        <span id="msg"></span>
                     </div>
                 </div>
             </div>
@@ -206,5 +209,23 @@ Feel free to connect with me—I'd love to collaborate and discuss exciting idea
                 event.currentTarget.classList.add('active-link');
             }
         </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyA1Kp0ehDPW9dGkvGxBC0koKDxGvIobo99Ho7adQlgWTSLvUk3YWdsZWv5A2SIC5Z6HQ/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById('msg')
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully! Thank you for reaching out."
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
     </body>
 </html>

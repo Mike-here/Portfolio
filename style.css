@@ -8,12 +8,15 @@ body {
     /* box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3); */
 
 }
-S
+
 /* Container */
 .container {
     /* max-width: 1200px;
     margin: 0 auto; */
     padding: 10px;
+}
+html{
+    scroll-behavior: smooth;
 }
 
 /* Header */
@@ -36,6 +39,9 @@ nav{
     align-items: center;
     flex-wrap: wrap;
     margin-top: 0px;
+    top: 20px;
+    right: 20px;
+    position: relative;
 }
 nav ul{
     display: flex;
@@ -392,10 +398,34 @@ form .view-all2{
     color: #4bb2e5;
     text-decoration: none;
 }
+nav .fa-solid{ 
+    display: none;
+    font-size: 30px;
+    color: white;
+}
+#msg{
+    color: rgb(26, 150, 61);
+    font-size: 20px;
+    text-align: center;
+    margin-top: -40px;
+    /* display: block; */
+}
+
 /* -----css for small devices----- */
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 700px){
     .about-col-1{
         flex-basis: 100%;
+    }
+    nav .fa-solid{ 
+        display: block;
+        font-size: 30px;
+        color: white;
+    }
+    .header-text{
+        font-size: 25px;
+    }
+    .header-text h1{
+        font-size: 20px;
     }
     .about-col-2{
         flex-basis: 100%;
