@@ -1,7 +1,7 @@
 body {
     height: 90vh;
     background-color: black;
-    background-image: url(Images/background.png);
+    /* background-image: url(Images/background.png); */
     background-size: 60% 105%;
     background-position: right 80px;
     background-repeat: no-repeat;
@@ -49,12 +49,13 @@ nav ul{
     margin: 0;
     list-style: none;
     gap: 5px;
-
+    
 }
 nav ul li{
     list-style: none;
     display: inline-block;
     margin: 5px 10px;
+    position: sticky;
 }
 nav ul li a {
     text-decoration: none;
